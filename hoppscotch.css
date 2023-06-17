@@ -2,8 +2,8 @@
   text-rendering: optimizeLegibility;
   scale: none;
   transform: none;
-  font-size: monospace;
-  font-size: 2em;
+  font-weight: lighter;
+  font-family: monospace;
 }
 
 .ͼo .cm-content.cm-lineWrapping.ͼr {
