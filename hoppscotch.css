@@ -2,7 +2,18 @@
   text-rendering: optimizeLegibility;
   scale: none;
   transform: none;
+  font-size: monospace;
   font-size: 2em;
-  font-weight: lighter;
-  font-family: monospace;
+}
+
+.ͼo .cm-content.cm-lineWrapping.ͼr {
+  color: #e06c75;
+}
+
+.ͼo .cm-content.cm-lineWrapping.ͼ14 {
+  color: #98c379;
+}
+
+.ͼo .cm-content.cm-lineWrapping.ͼv {
+  color: #d19a66;
 }
