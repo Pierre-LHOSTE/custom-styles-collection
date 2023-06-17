@@ -67,3 +67,8 @@
     a.channel-2QD9_O:nth-child(4) {
         display: none;
     }
+
+[class^='channelTextArea'] {
+        height: 300px;
+}
+
