@@ -1,0 +1,7 @@
+.ͼo .cm-content.cm-lineWrapping {
+  text-rendering: optimizeLegibility;
+  scale: none;
+  transform: none;
+  font-size: monospace;
+  font-size: 2em;
+}
