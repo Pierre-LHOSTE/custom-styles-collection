@@ -18,3 +18,7 @@
 .ͼo .cm-content.cm-lineWrapping .ͼv {
   color: #d19a66;
 }
+
+body {
+  font-family: "Segoe UI" !important;
+}
