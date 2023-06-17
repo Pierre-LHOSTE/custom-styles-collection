@@ -1,0 +1,3 @@
+.flex.relative.items-end * {
+  user-select: none;
+}
