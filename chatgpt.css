@@ -30,4 +30,5 @@ form div div:last-child {
 
 form div div:last-child textarea {
     padding : 16px;
+      padding-right: 56px;
 }
