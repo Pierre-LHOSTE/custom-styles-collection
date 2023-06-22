@@ -2,10 +2,10 @@
   user-select: none;
 }
 
-code::before {
+.prose :where(code):not(:where([class~=not-prose] *)):before {
     content: ""
 }
-code::after {
+.prose :where(code):not(:where([class~=not-prose] *)):after {
     content: ""
 }
 
