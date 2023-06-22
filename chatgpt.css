@@ -2,24 +2,10 @@
   user-select: none;
 }
 
-.markdown p > code::before {
+code::before {
     content: ""
 }
-.markdown p > code::after {
-    content: ""
-}
-
-.markdown td > code::before {
-    content: ""
-}
-.markdown td > code::after {
-    content: ""
-}
-
-.markdown li > code::before {
-    content: ""
-}
-.markdown li > code::after {
+code::after {
     content: ""
 }
 
