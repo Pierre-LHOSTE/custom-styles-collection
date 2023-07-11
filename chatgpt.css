@@ -33,7 +33,7 @@ form div div:last-child textarea {
 }
 
 /* redesign */
-body {
+body, .dark\:bg-gray-800 {
     --dark : #101319;
     --medium: #1A1D23;
     --light: #23262c;
