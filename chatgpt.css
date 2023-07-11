@@ -31,3 +31,33 @@ form div div:last-child textarea {
     padding : 16px;
       padding-right: 56px;
 }
+
+/* redesign */
+body {
+    --dark : #101319;
+    --medium: #1A1D23;
+    --light: #23262c;
+    
+    background-color: var(--dark) !important;
+}
+
+.bg-gray-900 {
+    background-color: var(--medium);
+    width: 300px !important;
+}
+
+.w-\[260px\] {
+    width: auto;
+}
+
+.dark .dark\:bg-gray-800 {
+    background-color: var(--dark);
+}
+
+.dark .dark\:md\:bg-vert-dark-gradient {
+    background: none;
+}
+
+.dark .dark\:border-gray-900\/50 {
+    background-color: var(--light);
+}
