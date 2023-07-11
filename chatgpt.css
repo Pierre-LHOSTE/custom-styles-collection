@@ -1,5 +1,6 @@
 .flex.relative.items-end * {
   user-select: none;
+    display: none;
 }
 
 .prose :where(code):not(:where([class~=not-prose] *)):before {
@@ -33,7 +34,7 @@ form div div:last-child textarea {
 }
 
 /* redesign */
-body, .dark\:bg-gray-800, .dark body, .dark html {
+body, .dark body, .dark html {
     --dark : #101319;
     --medium: #1A1D23;
     --light: #23262c;
@@ -46,12 +47,40 @@ body, .dark\:bg-gray-800, .dark body, .dark html {
     width: 300px !important;
 }
 
+
+.bg-gray-900 li {
+    margin-right: .5rem;
+}
+
+.bg-gray-900 li a > svg {
+    display: none;
+}
+
+.bg-gray-900 .overflow-y-auto {
+    overflow-x: hidden !important;
+}
+
+.bg-gradient-to-l {
+    display: none;
+}
+
+
 .bg-gray-900 > div {
     width: auto !important;
 }
 
-.dark .dark\:bg-gray-800 {
+.dark .dark\:bg-gray-800, .dark .dark\:bg-gray-800 > div {
     background-color: var(--dark);
+}
+
+.dark\:bg-gray-800 > div > div > div:last-child.h-32  {
+    display: none;
+}
+
+.dark .dark\:bg-gray-800 > div:nth-child(2n) > div {
+    background-color: var(--medium);
+    border-radius: 6px;
+    padding: 16px;
 }
 
 .dark .dark\:md\:bg-vert-dark-gradient {
@@ -61,3 +90,9 @@ body, .dark\:bg-gray-800, .dark body, .dark html {
 .dark .dark\:border-gray-900\/50 {
     background-color: var(--light);
 }
+
+div.bottom-0.absolute {
+    position: relative;
+}
+
+
