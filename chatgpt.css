@@ -42,57 +42,101 @@ body, .dark body, .dark html {
     background-color: var(--dark) !important;
 }
 
+/* nav */
 .bg-gray-900 {
     background-color: var(--medium);
     width: 300px !important;
 }
-
-
+.bg-gray-900[style^="width: 0px"] {
+    width: 0px !important;
+}
 .bg-gray-900 li {
     margin-right: .5rem;
 }
-
 .bg-gray-900 li a > svg {
     display: none;
 }
-
 .bg-gray-900 .overflow-y-auto {
     overflow-x: hidden !important;
 }
-
 .bg-gradient-to-l {
     display: none;
 }
-
-
 .bg-gray-900 > div {
     width: auto !important;
 }
+nav > .flex > a, nav > .flex > span > a {
+    border: none;
+}
 
-.dark .dark\:bg-gray-800, .dark .dark\:bg-gray-800 > div {
+/* nav > .flex > a {
+    background-color: #7289da;
+    color: white;
+}
+
+nav > .flex > a:hover {
+    background-color:#a8b5e6;
+    color: white;
+} */
+
+
+/* Main tchat */
+main div[class^="react-scroll"] {
+    background-color: var(--dark);
+}
+main .overflow-hidden > .h-full .flex > .group {
+    background-color: var(--dark);
+}
+main .overflow-hidden > .h-full .flex > .group pre .text-gray-200 {
+    
+    background-color: var(--light);
+    background-color: #7289da;
+    color: white;
+}
+main .overflow-hidden > .h-full .flex.flex-col.text-sm {
     background-color: var(--dark);
 }
 
-.dark\:bg-gray-800 > div > div > div:last-child.h-32  {
-    display: none;
-}
 
-.dark .dark\:bg-gray-800 > div:nth-child(2n) > div {
+/* Robot response */
+main .overflow-hidden > .h-full .flex > div.group:nth-child(2n) > div {
     background-color: var(--medium);
     border-radius: 6px;
-    padding: 16px;
 }
-
-.dark .dark\:md\:bg-vert-dark-gradient {
-    background: none;
-}
-
-.dark .dark\:border-gray-900\/50 {
+main .overflow-hidden > .h-full .flex > div.group:nth-child(2n) > div > div > div.flex.justify-between > div.flex.justify-between.items-center {
     background-color: var(--light);
 }
 
-div.bottom-0.absolute {
-    position: relative;
+/* Input */
+main div.bottom-0.absolute  {
+    background: none ;
+    position: relative !important;
+}
+main div.bottom-0.absolute .flex.flex-col.w-full  {
+    background-color: var(--light);
 }
 
 
+
+/* Last Space */
+main .overflow-hidden > .h-full .flex.flex-col.text-sm > div:not([class^="group"]) {
+/*     display: none; */
+    height: 3rem;
+    background: none;
+}
+
+
+button.btn-neutral {
+    background-color: #7289da !important;
+    color: white;
+}
+button.btn-neutral:hover {
+    background-color:#a8b5e6 !important;
+}
+button.btn-neutral div {
+    color: white;
+}
+
+button {
+    border: none;
+}
