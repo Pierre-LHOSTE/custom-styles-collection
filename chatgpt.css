@@ -46,8 +46,8 @@ body {
     width: 300px !important;
 }
 
-.w-\[260px\] {
-    width: auto;
+.bg-gray-900 > div {
+    width: auto !important;
 }
 
 .dark .dark\:bg-gray-800 {
