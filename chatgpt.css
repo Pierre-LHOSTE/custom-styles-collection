@@ -33,6 +33,10 @@ form div div:last-child textarea {
       padding-right: 56px;
 }
 
+ div.flex > header.sticky {
+    display: none;
+  }
+
 /* redesign */
 body, .dark body, .dark html {
     --dark : #101319;
