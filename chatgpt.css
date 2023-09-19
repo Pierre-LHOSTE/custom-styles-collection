@@ -1,0 +1,156 @@
+
+body, .dark body, .dark html {
+    --dark : #101319;
+    --medium: #1A1D23;
+    --light: #23262c;
+    
+    background-color: var(--dark) !important;
+}
+
+
+/* AVATAR */
+.group.w-full > div > div > div:first-child  {
+    display: none
+}
+
+
+/* CODE */
+code {
+    background-color: rgba(0,0,0,.33);
+    border-radius: 6px;
+    padding: .25rem .5rem;
+}
+
+code:before, code:after {
+    content: "" !important;
+}
+
+/* DIVIDER */
+.markdown hr {
+    border-color:rgba(0,0,0,0.25)
+}
+
+
+div > textarea ~ div {
+    display: none;
+}
+
+
+/* TEXT */
+main .overflow-hidden > .h-full .flex > div.group {
+    background-color: var(--medium);
+}
+main .overflow-hidden > .h-full .flex > div.group > div {
+    border-radius: 0 !important;
+}
+
+
+/*IA TEXT */
+main .overflow-hidden > .h-full .flex > div.group:nth-child(2n + 1) > div {
+    background-color: var(--medium);
+    border-radius: 6px;
+}
+
+/* ME */
+main .overflow-hidden > .h-full .flex > div.group:nth-child(2n + 2) > div {
+    background-color: var(--dark);
+    border-radius: 6px;
+}
+
+
+main div.bottom-0.absolute  {
+/*     background: none ; */
+/*     background: var(--medium) !important; */
+/*     position: relative !important; */
+}
+main div.bottom-0.absolute .flex.flex-col.w-full  {
+    background-color: var(--light);
+    margin: 0 0 32px 0;
+}
+
+main div.bottom-0.absolute  {
+    padding: 0;
+}
+
+main form {
+    margin: 0 !important;
+    max-width: none !important;
+}
+
+main form > div:first-child {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 32px;
+    background-color: var(--dark);
+}
+
+main form > div:first-child * {
+    margin: 0 !important;
+}
+
+
+/* VERSION INFO */
+main div.bottom-0.absolute > div:last-child  {
+    display: none;
+}
+
+
+
+
+ /* BLOCK CODE */
+main .overflow-hidden > .h-full .flex > .group pre .text-gray-200 {
+    background-color: var(--light);
+    background-color: #7289da;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NAV */
+.bg-gray-900  h3, .bg-gray-900 a:not(:hover) {
+    background: none !important;
+}
+.bg-gray-900 {
+    background-color: var(--light);
+    width: 300px !important;
+}
+.bg-gray-900[style^="width: 0px"] {
+    width: 0px !important;
+}
+.bg-gray-900 li {
+    margin-right: .5rem;
+}
+.bg-gray-900 li a > svg {
+    display: none;
+}
+.bg-gray-900 .overflow-y-auto {
+    overflow-x: hidden !important;
+}
+.bg-gradient-to-l {
+    display: none;
+}
+.bg-gray-900 > div {
+    width: auto !important;
+}
+nav > .flex > a, nav > .flex > span > a {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
