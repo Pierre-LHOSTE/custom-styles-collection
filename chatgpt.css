@@ -1,156 +1,206 @@
-
-body, .dark body, .dark html {
-    --dark : #101319;
+body,
+.dark body,
+.dark html {
+    --dark: #101319;
     --medium: #1A1D23;
     --light: #23262c;
-    
-    background-color: var(--dark) !important;
+    --blue: #7289da;
 }
 
+
+
+
+/* -------------------------------------------*/
+/* NAV */
+#__next > div > div:first-child {
+    background: var(--light) !important;
+    /*     background: red !important; */
+}
+
+/* NAV DATE  */
+#__next > div > div:first-child nav .overflow-y-auto > div > div > span > div > div > h3 {
+    background: var(--light) !important;
+    /*     background: red !important; */
+}
+
+/* NAV LI  */
+#__next > div > div:first-child nav .overflow-y-auto > div > div > span > div > ol > li > a {
+    background: var(--light) !important;
+}
+#__next > div > div:first-child nav .overflow-y-auto > div > div > span > div > ol > li > a:not([class*="2A2B32"]) {
+    filter: brightness(150%);
+}
+#__next > div > div:first-child nav .overflow-y-auto > div > div > span > div > ol > li > a:hover {
+    filter: brightness(125%);
+}
+
+/* NAV LI SVG */
+#__next > div > div:first-child nav .overflow-y-auto > div > div > span > div > ol > li > a > svg:first-child {
+    display: none;
+}
+/* NAV LI DEGRADEE */
+#__next > div > div:first-child nav .overflow-y-auto > div > div > span > div > ol > li > a > div > div {
+    background: none;
+}
+
+
+
+
+/* -------------------------------------------*/
+/* MAIN */
+main.relative {
+    background: var(--dark);
+}
+main.relative > div:nth-child(1) {
+    flex-direction: column;
+}
+/* CONTENT & INPUT */
+main.relative > div:nth-child(1) > * {
+    width: 100%;
+}
+
+/* CONTENT  */
+main.relative > div:nth-child(1) > div:nth-child(1) {
+    background: var(--dark);
+}
+/* TRUE CONTENT  */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div {
+    background: var(--dark);
+}
+
+/* LAST MESSAGE */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div:not(.group) {
+    height: 6rem;
+}
+
+/* HEADER WITH GPT-4  */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div header {
+    display: none !important;
+}
+
+
+
+
+
+/* -------------------------------------------*/
+/* MESSAGE  */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div {
+    background: var(--dark) !important;
+}
+
+/* ME  */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div:nth-child(2n) {
+    /*     background: var(--dark) !important; */
+}
+
+/* IA */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div:nth-child(2n+1) {
+    /*     background: var(--medium) !important; */
+}
 
 /* AVATAR */
-.group.w-full > div > div > div:first-child  {
-    display: none
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div > div > div > div:first-child {
+    display: none !important;
+}
+
+/* MESSAGE CONTENT 1 */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div > div > div {
+    max-width: 42rem;
+}
+/* MESSAGE CONTENT 2 */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div > div > div > div:last-child {
+    padding: 32px;
+}
+
+/* MESSAGE CONTENT OF IA */
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div > div:nth-child(2n+1) > div > div > div:last-child {
+    background: var(--medium) !important;
 }
 
 
+
+
+
+
+
+/* -------------------------------------------*/
+/* MARKDOWN */
 /* CODE */
-code {
-    background-color: rgba(0,0,0,.33);
+.prose :where(code):not(:where([class~=not-prose] *)):before {
+    content: ""
+}
+.prose :where(code):not(:where([class~=not-prose] *)):after {
+    content: ""
+}
+
+/* LITTLE CODE */
+.markdown p > code,
+.markdown td > code,
+.markdown li > code {
+    background-color: rgba(0, 0, 0, .33);
     border-radius: 6px;
     padding: .25rem .5rem;
 }
-
-code:before, code:after {
-    content: "" !important;
-}
-
-/* DIVIDER */
 .markdown hr {
-    border-color:rgba(0,0,0,0.25)
+    border-color: rgba(0, 0, 0, 0.25)
 }
 
-
-div > textarea ~ div {
-    display: none;
-}
-
-
-/* TEXT */
-main .overflow-hidden > .h-full .flex > div.group {
-    background-color: var(--medium);
-}
-main .overflow-hidden > .h-full .flex > div.group > div {
-    border-radius: 0 !important;
-}
-
-
-/*IA TEXT */
-main .overflow-hidden > .h-full .flex > div.group:nth-child(2n + 1) > div {
-    background-color: var(--medium);
-    border-radius: 6px;
-}
-
-/* ME */
-main .overflow-hidden > .h-full .flex > div.group:nth-child(2n + 2) > div {
-    background-color: var(--dark);
-    border-radius: 6px;
-}
-
-
-main div.bottom-0.absolute  {
-/*     background: none ; */
-/*     background: var(--medium) !important; */
-/*     position: relative !important; */
-}
-main div.bottom-0.absolute .flex.flex-col.w-full  {
-    background-color: var(--light);
-    margin: 0 0 32px 0;
-}
-
-main div.bottom-0.absolute  {
-    padding: 0;
-}
-
-main form {
-    margin: 0 !important;
-    max-width: none !important;
-}
-
-main form > div:first-child {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 32px;
-    background-color: var(--dark);
-}
-
-main form > div:first-child * {
-    margin: 0 !important;
-}
-
-
-/* VERSION INFO */
-main div.bottom-0.absolute > div:last-child  {
-    display: none;
-}
-
-
-
-
- /* BLOCK CODE */
+/* BLOCK CODE */
 main .overflow-hidden > .h-full .flex > .group pre .text-gray-200 {
     background-color: var(--light);
     background-color: #7289da;
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* NAV */
-.bg-gray-900  h3, .bg-gray-900 a:not(:hover) {
-    background: none !important;
+blockquote p {
+    font-weight: normal;
 }
-.bg-gray-900 {
-    background-color: var(--light);
-    width: 300px !important;
+
+
+/* -------------------------------------------*/
+/* INPUT */
+main.relative > div:nth-child(1) > div:nth-child(2) {
+    background: none;
+    background-color: var(--medium) !important;
+    padding: 32px 0;
+    position: relative;
+    outline: 2px solid var(--dark);
+    box-shadow: 0 0 20px 10px var(--dark);
 }
-.bg-gray-900[style^="width: 0px"] {
-    width: 0px !important;
+
+/* TEXT & BUTTONS */
+main.relative > div:nth-child(1) > div:nth-child(2) > form > div {
+    flex-direction: row-reverse !important;
 }
-.bg-gray-900 li {
-    margin-right: .5rem;
+
+/* BUTTONS */
+main.relative > div:nth-child(1) > div:nth-child(2) > form > div > div:first-child {
+    background: none;
 }
-.bg-gray-900 li a > svg {
-    display: none;
-}
-.bg-gray-900 .overflow-y-auto {
-    overflow-x: hidden !important;
-}
-.bg-gradient-to-l {
-    display: none;
-}
-.bg-gray-900 > div {
-    width: auto !important;
-}
-nav > .flex > a, nav > .flex > span > a {
+
+/* BUTTON */
+main.relative > div:nth-child(1) > div:nth-child(2) > form > div > div:first-child button {
+    /*     background: var(--light) */
+    background: var(--blue);
+    color: white;
     border: none;
 }
 
+/* BUTTON SVG */
+main.relative > div:nth-child(1) > div:nth-child(2) > form > div > div:first-child button svg {
+    stroke: white !important;
+    stroke-width: 2.5;
+}
 
+/* TEXTAREA */
+main.relative > div:nth-child(1) > div:nth-child(2) > form > div > div:last-child > div {
+    background-color: var(--light) !important;
+    box-shadow: none;
+    border: none;
+    height: 100%;
+}
 
-
-
-
-
-
-
-
-
+/* VERSION */
+main.relative > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+    display: none;
+}
