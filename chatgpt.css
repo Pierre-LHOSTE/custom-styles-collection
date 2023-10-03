@@ -64,7 +64,7 @@ main.relative > div:nth-child(1) > div:nth-child(1) {
     background: var(--dark);
 }
 /* TRUE CONTENT  */
-main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div {
+main.relative > div:nth-child(1) > div:nth-child(1) > div > div > div, main.relative > div:nth-child(1) > div:nth-child(1) > div {
     background: var(--dark);
 }
 
