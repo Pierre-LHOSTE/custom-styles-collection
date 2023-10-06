@@ -198,8 +198,15 @@ main.relative > div:nth-child(1) > div:nth-child(2) > form > div > div:last-chil
     box-shadow: none;
     border: none;
     height: 100%;
+    overflow: auto !important;
 }
-
+main.relative > div:nth-child(1) > div:nth-child(2) > form > div > div:last-child > div textarea {
+    min-height: 100% !important;
+    max-height: none !important;
+    padding: 16px !important;
+    overflow-y: hidden !important;
+    
+}
 /* VERSION */
 main.relative > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
     display: none;
