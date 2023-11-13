@@ -3,6 +3,7 @@
 @namespace      chatGPT BQ Theme
 @version        1.0.0
 @match          https://chat.openai.com/*
+@updateURL      https://raw.githubusercontent.com/Pierre-LHOSTE/custom-styles-collection/main/chatgpt.css
 ==/UserStyle== */
 
 body,

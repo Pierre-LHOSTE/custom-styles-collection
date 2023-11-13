@@ -3,6 +3,7 @@
 @namespace      Authentic Discord Colors
 @version        1.0.0
 @match          https://discord/*
+@updateURL      https://raw.githubusercontent.com/Pierre-LHOSTE/custom-styles-collection/main/discord.css
 ==/UserStyle== */
 
 :root {
