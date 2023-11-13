@@ -2,7 +2,7 @@
 @name           authentic-discord-colors
 @namespace      Authentic Discord Colors
 @version        1.0.0
-@match          https://discord/app/*
+@match          https://discord/*
 ==/UserStyle== */
 
 :root {
