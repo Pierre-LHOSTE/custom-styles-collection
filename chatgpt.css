@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name           chatgpt-bq-theme
+@namespace      chatGPT BQ Theme
+@version        1.0.0
+@match          https://chat.openai.com/*
+==/UserStyle== */
+
 body,
 .dark body,
 .dark html {
@@ -6,9 +13,6 @@ body,
     --light: #23262c;
     --blue: #7289da;
 }
-
-
-
 
 /* -------------------------------------------*/
 /* NAV */
